@@ -1,0 +1,153 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[grassThemeSmall]]
+    palette = "#000000:#bb0000:#00bb00:#e7b000:#0000a3:#950062:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0000bb:#ff55ff:#55ffff:#ffffff"
+    background_darkness = 0.78
+    use_system_font = False
+    cursor_color = "#8c2800"
+    foreground_color = "#fff0a5"
+    icon_bell = False
+    show_titlebar = False
+    font = Inconsolata Medium 10
+    background_color = "#13773d"
+    cursor_blink = False
+  [[smallerText]]
+    background_darkness = 0.82
+    use_system_font = False
+    font = Monospace 8
+    background_type = transparent
+    cursor_color = "#c4c4c4"
+  [[grassTheme]]
+    palette = "#000000:#bb0000:#00bb00:#e7b000:#0000a3:#950062:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0000bb:#ff55ff:#55ffff:#ffffff"
+    background_darkness = 0.78
+    use_system_font = False
+    cursor_color = "#8c2800"
+    foreground_color = "#fff0a5"
+    icon_bell = False
+    font = Inconsolata Medium 10
+    background_color = "#13773d"
+    cursor_blink = False
+  [[clock-red]]
+    palette = "#000000:#ff3f00:#00bb00:#e7b000:#0072ff:#bb00bb:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0072ae:#ff55ff:#55ffff:#ffffff"
+    use_system_font = False
+    cursor_color = "#ffffff"
+    foreground_color = "#d7c9a7"
+    show_titlebar = False
+    font = Monospace Bold 6
+    background_color = "#7a251e"
+  [[default]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    show_titlebar = False
+    font = Inconsolata Medium 11
+    background_color = "#eee8d5"
+  [[dark-default]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    font = Inconsolata Medium 11
+    background_color = "#002b36"
+    show_titlebar = False
+  [[old-solar-dark-default]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    font = Inconsolata Medium 12
+    background_color = "#002b36"
+  [[old-default]]
+    background_darkness = 0.8
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    background_type = transparent
+    scrollback_lines = 1024
+  [[old-solar-default]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    font = Inconsolata Medium 12
+    background_color = "#eee8d5"
+  [[LightGrey]]
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    background_darkness = 0.84
+    scrollback_lines = 1024
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#676767"
+    foreground_color = "#000000"
+    font = Inconsolata Medium 10
+    background_color = "#c4c4c4"
+  [[solarized-writing-l]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    show_titlebar = False
+    font = Courier 10 Pitch 12
+    background_color = "#eee8d5"
+  [[smallerTextGrey]]
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    background_darkness = 0.82
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#565656"
+    foreground_color = "#000000"
+    font = Monospace 8
+    background_color = "#b5b5b5"
+  [[retro]]
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollback_lines = 1024
+    foreground_color = "#00ff00"
+  [[Light]]
+    scrollback_lines = 1024
+    font = Inconsolata Medium 10
+    background_color = "#ffffff"
+    use_system_font = False
+    foreground_color = "#000000"
+  [[solarized-dark-theme]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    show_titlebar = False
+    font = Inconsolata Medium 10
+    background_color = "#002b36"
+  [[red-sands-theme]]
+    palette = "#000000:#ff3f00:#00bb00:#e7b000:#0072ff:#bb00bb:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0072ae:#ff55ff:#55ffff:#ffffff"
+    use_system_font = False
+    cursor_color = "#ffffff"
+    foreground_color = "#d7c9a7"
+    font = Inconsolata Medium 11
+    background_color = "#7a251e"
+  [[grass-theme-small]]
+    palette = "#000000:#bb0000:#00bb00:#e7b000:#0000a3:#950062:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0000bb:#ff55ff:#55ffff:#ffffff"
+    background_darkness = 0.78
+    use_system_font = False
+    cursor_color = "#8c2800"
+    foreground_color = "#fff0a5"
+    icon_bell = False
+    show_titlebar = False
+    font = Inconsolata Medium 10
+    background_color = "#13773d"
+    cursor_blink = False
+  [[solarized-light-theme]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    show_titlebar = False
+    font = Inconsolata Medium 10
+    background_color = "#eee8d5"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

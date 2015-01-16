@@ -1,0 +1,143 @@
+# Conky, a system monitor, based on torsmo
+#
+# Any original torsmo code is licensed under the BSD license
+#
+# All code written since the fork of torsmo is licensed under the GPL
+#
+# Please see COPYING for details
+#
+# Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+# Copyright (c) 2005-2010 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+# All rights reserved.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+#conkyrc file for white macbook
+
+double_buffer yes
+alignment top_right
+background true
+border_width 1
+cpu_avg_samples 2
+default_color black
+default_outline_color black
+default_shade_color black
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont DejaVu Sans Mono:size=8
+gap_x 5
+gap_y 34
+minimum_size 5 5
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_class Conky
+own_window_type override
+own_window_transparent yes
+#own_window_argb_visual true
+#own_window_argb_value 255
+stippled_borders 0
+update_interval 2.0
+update_interval_on_battery 2.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+temperature_unit fahrenheit
+top_cpu_seperate false
+
+TEXT
+#${scroll 16 $nodename - $sysname $kernel on $machine | }
+#${execbar xbacklight -get}
+$nodename
+$sysname - $kernel
+
+${alignc}S T A T U S :
+$hr
+${color darkgreen}Batt: $battery$color$alignr
+#${color darkgreen}${battery_bar 3}$color
+${color black}Uptime:$color $uptime
+
+#${color grey}Frequency (in MHz):$color $freq
+#${color black}Frequency (in GHz):$color $freq_g
+#${color black}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
+#${color black}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
+#
+Freq: $freq_g GHz $alignr${exec sensors | grep Exhaust | cut -b 14-21 }
+Temp:$alignr 0: ${exec sensors | grep Core\ 0 | cut -b 16-19} C 1: ${exec sensors | grep Core\ 1 | cut -b 16-19} C
+${color blue}CPU Usage: $cpu% ${alignr}$color 
+#Freq: $freq_g GHz#${cpubar 4}
+${color blue}$alignc${cpugraph 24,128}$color
+#${color black}Processes:$color $processes  ${color grey}Running:$color $running_processes
+#gunmetal color 	#2C3539
+${color darkgreen}RAM Usage: $memperc% 
+${membar 6}$color
+#${memgauge}
+${color darkgreen}Swap Usage:$swapperc% ${swapbar 6}$color 
+$hr
+#$laptop_mode
+#nice orange #e8a317
+${alignc}File systems:
+${color  #CD7F32} #${alignc}File systems:
+$alignr / ${fs_used /}/${fs_size /} 
+${fs_bar 6 /}
+$alignr IO = $diskio
+$color
+${color black}${alignc}N E T W O R K I N G :
+$hr
+Wi-Fi: 
+#bitrate=${wireless_bitrate eth1}
+#${wireless_link_qual eth1}
+#Up:$color ${upspeed eth0} ${color black} - Down:$color ${downspeed eth0}
+#
+#
+$color${color darkgreen}Up:${upspeed wlan1} $color ${color black}
+${color darkgreen}$alignc${upspeedgraph wlan1 24,128}$color
+$color${color red}Down: ${downspeed wlan1} $color
+${color red}$alignc${downspeedgraph wlan1 24,128}
+#Up:$color ${upspeed eth1} ${color black}
+#${color darkgreen}$alignc${upspeedgraph eth1 24,128}$color
+#Down:$color ${downspeed eth1}
+#${color red}$alignc${downspeedgraph eth1 24,128}
+${color}Ethernet:
+Up:$color ${upspeed eth0} ${color black}
+Down:$color ${downspeed eth0}
+#$alignc ${color darkgreen}${upspeedgraph eth0 24,100} ${color red}${downspeedgraph eth0 24,100}
+$color$hr
+
+${alignc}P R O C E S S E S :
+$hr
+${color black}Processes:$color$processes ${color black}Running:$color$running_processes
+
+${color black}Name                CPU%
+${color black} ${top name 1} ${top cpu 1}
+${color black} ${top name 2} ${top cpu 2}
+${color black} ${top name 3} ${top cpu 3}
+${color black} ${top name 4} ${top cpu 4}
+$color
+
+#indicator #orange #ddaa00
+${color}Mem usage           MEM%
+${color black} ${top_mem name 1} ${top_mem mem 1}
+${color black} ${top_mem name 2} ${top_mem mem 2}
+${color black} ${top_mem name 3} ${top_mem mem 3}
+${color black} ${top_mem name 3} ${top_mem mem 3}
+
+#Brightness: ${execbar xbacklight -get}
