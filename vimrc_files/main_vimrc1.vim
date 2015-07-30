@@ -30,6 +30,12 @@ set expandtab
 "make sure backspace behaves like I want it to
 set backspace=indent,eol,start
 
+"set so statusline always shows
+set laststatus=2
+
+" set default statusline format
+"set statusline=%f%=%c/%l
+
 syntax on
 
 " Mapping related settings {{{
