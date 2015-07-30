@@ -34,7 +34,7 @@ set backspace=indent,eol,start
 set laststatus=2
 
 " set default statusline format
-"set statusline=%f%=%c/%l
+set statusline=%f%=%c/%l
 
 syntax on
 
