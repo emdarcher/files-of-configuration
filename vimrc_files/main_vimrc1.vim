@@ -27,6 +27,8 @@ set shiftwidth=4  " number of spaces to use for autoindenting
 set expandtab
 "
 
+"make sure backspace behaves like I want it to
+set backspace=indent,eol,start
 
 syntax on
 
