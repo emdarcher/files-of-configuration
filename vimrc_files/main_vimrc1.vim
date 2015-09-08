@@ -119,6 +119,18 @@ function! s:FoldColumnToggle()
     endif
 endfunction
 
+
+" map to toggle number line
+nnoremap <Leader>nn :call <SID>NumberLineToggle()<cr>
+
+function! s:NumberLineToggle()
+    if &number
+        setlocal nonumber
+    else
+        setlocal number
+    endif
+endfunction
+
 nnoremap <Leader>ai :call <SID>AutoIndentToggle()<cr>
 
 function! s:AutoIndentToggle()
