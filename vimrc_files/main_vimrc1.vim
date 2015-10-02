@@ -226,6 +226,7 @@ augroup filetype_text
     autocmd FileType text :setlocal statusline+=%l        " Current line
     autocmd FileType text :setlocal statusline+=/         " Separator
     autocmd FileType text :setlocal statusline+=%L        " Total lines
+    autocmd FileType text :setlocal nonumber              " to disable numline
 augroup END
 " }}}
 
