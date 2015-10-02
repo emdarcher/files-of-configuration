@@ -159,6 +159,19 @@ function! s:QuickfixToggle()
     endif
 endfunction
 
+nnoremap <Leader>sol :call <SID>SolarizedToggle()<cr>
+
+let g:colors_name = "default"
+let g:old_colo = g:colors_name
+
+function! s:SolarizedToggle()
+    if g:colors_name ==# "solarized" 
+        execute "colorscheme " . g:old_colo
+    else
+        let g:old_colo = g:colors_name
+        colorscheme solarized
+    endif
+endfunction
 
 
 " }}}
