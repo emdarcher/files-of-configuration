@@ -26,6 +26,9 @@ set tabstop=4     " a tab is four spaces
 set shiftwidth=4  " number of spaces to use for autoindenting
 set expandtab
 "
+"change default max amount of tabs open
+set tabpagemax=24
+
 
 "make sure backspace behaves like I want it to
 set backspace=indent,eol,start
