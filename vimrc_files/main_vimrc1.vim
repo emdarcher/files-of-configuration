@@ -173,6 +173,20 @@ function! s:SolarizedToggle()
     endif
 endfunction
 
+nnoremap <Leader>sod :call <SID>SolarizedDarkToggle()<cr>
+
+let g:colors_name = "default"
+let g:old_colo = g:colors_name
+
+function! s:SolarizedDarkToggle()
+    if g:colors_name ==# "solarized" 
+        execute "colorscheme " . g:old_colo
+    else
+        let g:old_colo = g:colors_name
+        colorscheme darkblue
+        colorscheme solarized
+    endif
+endfunction
 
 " }}}
 
