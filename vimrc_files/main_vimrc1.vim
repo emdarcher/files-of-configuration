@@ -41,6 +41,11 @@ set statusline=%f%=%c/%l
 
 syntax on
 
+" solarized settings {{{
+" enable proper transparency in some terminals
+let g:solarized_termtrans=1
+" }}}
+
 " Mapping related settings {{{
 
 " set the leader characters
@@ -172,6 +177,7 @@ function! s:SolarizedToggle()
         execute "colorscheme " . g:old_colo
     else
         let g:old_colo = g:colors_name
+        set background=light
         colorscheme solarized
     endif
 endfunction
@@ -186,7 +192,7 @@ function! s:SolarizedDarkToggle()
         execute "colorscheme " . g:old_colo
     else
         let g:old_colo = g:colors_name
-        colorscheme darkblue
+        set background=dark
         colorscheme solarized
     endif
 endfunction
