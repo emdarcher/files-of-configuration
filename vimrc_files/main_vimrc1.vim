@@ -232,12 +232,25 @@ augroup END
 augroup filetype_c
     autocmd!
     autocmd FileType c setlocal tabstop=4|setlocal shiftwidth=4|setlocal expandtab
-    autocmd FileType c :iabbrev <buffer> rtn return
+    "autocmd FileType c :iabbrev <buffer> rtn return
     " map for adding a comment to the begging of a line
     autocmd FileType c nnoremap <buffer> <localleader>c I//<esc>
     " map to <localleader>; to put semicolon at end of line
     " and then return to original cursor location
     autocmd FileType c nnoremap <buffer> <LocalLeader>; :<c-u>execute "normal! mqA;\e`q"<cr>
+augroup END
+" }}}
+
+" C++ file settings {{{
+augroup filetype_cpp
+    autocmd!
+    autocmd FileType cpp setlocal tabstop=4|setlocal shiftwidth=4|setlocal expandtab
+    "autocmd FileType cpp :iabbrev <buffer> rtn return
+    " map for adding a comment to the begging of a line
+    autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
+    " map to <localleader>; to put semicolon at end of line
+    " and then return to original cursor location
+    autocmd FileType cpp nnoremap <buffer> <LocalLeader>; :<c-u>execute "normal! mqA;\e`q"<cr>
 augroup END
 " }}}
 
