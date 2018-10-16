@@ -41,6 +41,11 @@ set statusline=%f%=%c/%l
 
 syntax on
 
+" solarized settings {{{
+" enable proper transparency in some terminals
+let g:solarized_termtrans=1
+" }}}
+
 " Mapping related settings {{{
 
 " set the leader characters
@@ -172,6 +177,7 @@ function! s:SolarizedToggle()
         execute "colorscheme " . g:old_colo
     else
         let g:old_colo = g:colors_name
+        set background=light
         colorscheme solarized
     endif
 endfunction
@@ -186,7 +192,7 @@ function! s:SolarizedDarkToggle()
         execute "colorscheme " . g:old_colo
     else
         let g:old_colo = g:colors_name
-        colorscheme darkblue
+        set background=dark
         colorscheme solarized
     endif
 endfunction
@@ -226,7 +232,7 @@ augroup END
 augroup filetype_c
     autocmd!
     autocmd FileType c setlocal tabstop=4|setlocal shiftwidth=4|setlocal expandtab
-    autocmd FileType c :iabbrev <buffer> rtn return
+    "autocmd FileType c :iabbrev <buffer> rtn return
     " map for adding a comment to the begging of a line
     autocmd FileType c nnoremap <buffer> <localleader>c I//<esc>
     " map to <localleader>; to put semicolon at end of line
@@ -239,7 +245,7 @@ augroup END
 augroup filetype_cpp
     autocmd!
     autocmd FileType cpp setlocal tabstop=4|setlocal shiftwidth=4|setlocal expandtab
-    autocmd FileType cpp :iabbrev <buffer> rtn return
+    "autocmd FileType cpp :iabbrev <buffer> rtn return
     " map for adding a comment to the begging of a line
     autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
     " map to <localleader>; to put semicolon at end of line
