@@ -167,12 +167,20 @@ function! s:QuickfixToggle()
     endif
 endfunction
 
+"variable flag for if running the toggle for first time
+let g:s_toggle_first_time = 1
+
+"function to toggle solarized colorscheme
 nnoremap <Leader>sol :call <SID>SolarizedToggle()<cr>
 
-let g:colors_name = "default"
-let g:old_colo = g:colors_name
-
 function! s:SolarizedToggle()
+    if g:s_toggle_first_time == 1
+        " if first time then declare the global variables
+        " and clear the flag
+        let g:s_toggle_first_time = 0
+        let g:colors_name = "default"
+        let g:old_colo = g:colors_name
+    endif
     if g:colors_name ==# "solarized" 
         execute "colorscheme " . g:old_colo
     else
@@ -182,12 +190,20 @@ function! s:SolarizedToggle()
     endif
 endfunction
 
+"variable flag for if running the toggle for first time
+let g:sd_toggle_first_time = 1
+
+"function to toggle solarized dark colorscheme
 nnoremap <Leader>sod :call <SID>SolarizedDarkToggle()<cr>
 
-let g:colors_name = "default"
-let g:old_colo = g:colors_name
-
 function! s:SolarizedDarkToggle()
+    if g:sd_toggle_first_time == 1
+        " if first time then declare the global variables
+        " and clear the flag
+        let g:sd_toggle_first_time = 0
+        let g:colors_name = "default"
+        let g:old_colo = g:colors_name
+    endif
     if g:colors_name ==# "solarized" 
         execute "colorscheme " . g:old_colo
     else
